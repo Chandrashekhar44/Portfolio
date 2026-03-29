@@ -145,12 +145,10 @@ function Hero() {
           Full-Stack Developer · Systems-Focused
         </p>
 
-        {/* name — clamp goes low enough for mobile */}
         <h1 style={{ fontFamily:"'Cormorant Garamond',serif", fontSize:"clamp(42px,15vw,104px)", fontWeight:300, lineHeight:1, letterSpacing:"-2px", color:"var(--ink)", opacity:0, animation:"fadeUp .85s .35s ease forwards", whiteSpace:"nowrap" }}>
           Chandra <span style={{ fontStyle:"italic", color:"var(--accent)" }}>Shekhar</span>
         </h1>
 
-        {/* tagline — hide lines on mobile, wrap text */}
         <div style={{ display:"flex", alignItems:"center", gap:16, margin:"36px 0", opacity:0, animation:"fadeUp .7s .6s ease forwards" }}>
           <div style={{ width:32, height:"0.5px", background:"var(--accent)", flexShrink:0 }} />
           <p style={{ fontFamily:"'DM Mono',monospace", fontSize:10, letterSpacing:"0.14em", textTransform:"uppercase", color:"var(--muted)" }}>Turning ideas into experiences</p>
@@ -162,7 +160,6 @@ function Hero() {
           from intuitive interfaces to reliable backend systems, built to last.
         </p>
 
-        {/* cta — stack on mobile */}
         <div style={{ display:"flex", flexWrap:"wrap", alignItems:"center", justifyContent:"center", gap:24, marginTop:48, opacity:0, animation:"fadeUp .7s 1s ease forwards" }}>
           <HoverBtn href="#work" bg="var(--ink)" color="var(--warm-white)" hoverBg="var(--accent)">See my work</HoverBtn>
           <a href="#contact" style={{ fontSize:13, color:"var(--muted)", textDecoration:"none", display:"flex", alignItems:"center", gap:8, transition:"color .25s" }}
@@ -194,7 +191,6 @@ function HoverBtn({ href, bg, color, hoverBg, children }) {
   );
 }
 
-/* ─── TOOLS ─── */
 function Tools() {
   return (
     <section id="skills" style={{ background:"var(--paper)" }}>
@@ -243,7 +239,6 @@ function Pill({ icon, name }) {
   );
 }
 
-/* ─── PROJECTS ─── */
 function Projects() {
   return (
     <section id="work" style={{ background:"var(--warm-white)" }}>
